@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Balls Animation</title>
+    <style>
+    .child
+    {
+        background-color:rgb(234, 0, 255);
+        height:80px;
+        width: 90px;
+        border-radius: 56%;
+        animation: bouncing 0.7s linear 0s infinite alternate;
+        font-size:60PX;
+        font-style:bold;  
+    }
+    .container
+    {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        padding-top: 250px;
+        background-color: rgb(62, 248, 78);
+        width:auto;
+        height:450px;
+        background-image:linear-gradient(30deg,black,rgba(237, 252, 24, 0.884),rgb(12, 238, 5),rgb(17, 248, 36),black)
+    }
+    @keyframes bouncing
+    {
+        0%
+        {
+        transform:translateY(-100px);
+        background-color:rgb(247, 18, 18);
+        } 
+        100%
+        {
+        transform: translateY(100px);
+        background-color:rgba(204, 4, 154, 0.952);
+        }  
+    }
+    .one
+    {
+        animation-delay:0.1s;
+    }
+    .two
+    {
+        animation-delay:0.2s;
+    }
+    .four
+    {
+        animation-delay:0.4s;
+    }
+    .five
+    {
+        animation-delay:0.5s;
+    }
+    .six
+    {
+        animation-delay:0.6s;
+    }
+    .seven
+    {
+        animation-delay:0.7s;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child one"></div>
+        <div class="child two"></div>
+        <div class="child four"></div>
+        <div class="child five"></div>
+        <div class="child six"></div>
+        <div class="child seven"></div>
+    </div>
+</body>
+</html>

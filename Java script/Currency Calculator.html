@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Currency Calculator</title>
+    <script>
+        function main()
+        {
+            let amt=(prompt("Enter Amount"))
+            if(amt>=2000)
+            {
+               let count2000=Math.floor(amt/2000);
+               console.log(`2000 ${count2000}=${2000*count2000}`);\
+               
+               amt=amt%2000;
+            }
+            if(amt>=500)
+            {
+               let count500=Math.floor(amt/500);
+               console.log(`500 ${count500}=${500*count500}`);
+               amt=amt%500;
+            }
+            if(amt>=200)
+            {
+               let count200=Math.floor(amt/200);
+               console.log(`200 ${count200}=${200*count200}`);
+               amt=amt%200;
+            }
+            if(amt>=100)
+            {
+               let count100=Math.floor(amt/100);
+               console.log(`100 ${count100}=${100*count100}`);
+            }
+        }
+        main();
+    </script>
+</head>
+<body>
+    <h1>Withdraw Amount form Atm Rupees 4800</h1>
+</body>
+</html>

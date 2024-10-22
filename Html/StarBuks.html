@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>starbucks global academy</title>
+    <style>
+        img
+        {
+            width:450px;
+            height:790px;
+            background-size: auto;
+        }
+        .outer
+        {
+            border-style: solid rgba(0, 0, 0, 0.144);
+            height:800px;
+            width: 1050px;
+            margin-left: 100px;
+            background-color: white;
+            box-shadow:  0 0 20px black;
+        }
+        body
+        {
+            background-color: rgba(128, 128, 128, 0.628);
+        }
+        h1
+        {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        p
+        {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: rgba(0, 0, 0, 0.692);
+            font-size:15px;
+            text-align: justify;
+        }
+        h3
+        {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size:15px;
+            margin-top: 25px;
+        }
+        span
+        {
+            font-weight: 100;
+        }
+
+        form
+        {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size:14px;
+        }
+        input
+        {
+            padding: 10px 350px 10px  5px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        table
+        {
+            margin-right:60px;
+            margin-left: 10px;
+
+        }
+        .number
+        {
+            margin-left: 205px;
+        }
+        #code
+        {
+            margin-left: 45px;
+            padding: 10px;
+        }   
+        select
+        {
+            padding: 10px 60px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        .options
+        {
+            padding: 10px 240px;
+        }
+        button
+        {
+            padding:10px 30px ;
+            margin-left: 220px;
+            margin-top: 20px;
+            border-radius: 20px;
+            background-color: rgb(3, 102, 3);
+            border:none;
+            font-size: large;
+            color: white;
+        }
+        button:hover
+        {
+            background-color: rgb(10, 49, 10);
+        }
+        .PHONE
+        {
+            padding: 10px 5px;
+        }
+        .star{
+            color: red;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="outer">
+      <table>
+        <tr>
+            <td><img src="https://i.pinimg.com/originals/e9/d1/20/e9d1205918d4460d36328dff6aa42661.jpg" alt=""></td>
+            <td>
+                <h1>Take courses today</h1>
+                <p> There are many pathways to opportunity and success and education is a great one. To get started with taking courses on Starbucks Global Academy, simply enter your name and email in the form below and we will send you updates and a link to your account.</p>
+                <h3>Already have an account? <br><span class="abc"><a href="https://www.starbucks.in/profile"> Sign in</a> to add these courses to your account.</span></h3>
+                <form action="">
+                    <label for="">First Name<span class="star">*</span></label><br>
+                    <input type="text" required><br>
+                    <label for="">Last name<span class="star">*</span></label><br>
+                    <input type="text"required><br>
+                    <label for="">Email<span class="star">*</span></label><br>
+                    <input type="email" required><br>
+                    <label for="" class="location">Location<span class="star">*</span></label>
+                    <label for="" class="number">Phone Number<span class="star">*</span></label><br>
+                    <select name="" id="">
+                        <option value="" hidden disabled selected>Select option</option>
+                        <option value="">America</option>
+                        <option value="">Australia</option>
+                        <option value="">Brazil</option>
+                        <option value="">China</option>
+                        <option value="">Denmark</option>
+                        <option value="">Inida</option>
+                    </select>
+                    <select name="" id="code">
+                        <option value="">+00</option>
+                        <option value="">+1</option>
+                        <option value="">+61</option>
+                        <option value="">+55</option>
+                        <option value="">+86</option>
+                        <option value="">+45</option>
+                        <option value="">+91</option>
+                    </select>
+                    <input type="tel" pattern="[6-9]{1}[0-9]{9}" maxlength="10" minlength="10" required inputmode="numeric" class="PHONE"><br>
+                    <label for="">Are you a Starbucks Partner?<span class="star">*</span></label><br>
+                    <select class="options">
+                        <option hidden selected disabled>Select</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br>
+                    <button>Next</button>
+                </table>
+                </form>
+
+            </td>
+        </tr>
+      </table>
+    </div>
+</body>
+</html>
